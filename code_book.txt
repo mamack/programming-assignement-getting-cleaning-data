@@ -1,0 +1,24 @@
+Code-Book
+
+Use of the data from Human Activity Recognition Using Smartphones Dataset [1]
+
+[1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
+
+Import the following data:
+
+- activity_labels.txt: describe the activities
+- features.txt: describe the features
+- subject_test.txt/subject_train.txt: define the subjects which are in the test or train group
+- X_test.txt/X_train.txt: the test or train dataset
+- Y_test.txt/Y_train.txt: the activites for test or train dataset
+
+Merge the datasets.
+Take the means and the standard variations for following variables:
+- tBodyAcc-XYZ
+- tBodyGyro-XYZ
+- fBodyAcc-XYZ
+- fBodyGyro-XYZ
+
+Features are normalized and bounded within [-1,1].
+
+For each activity and each subject the mean is calculated.
